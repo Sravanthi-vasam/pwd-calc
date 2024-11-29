@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" placeholder="pwd"><br>
+   <button onclick="fun()">click here</button> 
+      <br><br>
+
+   <input type1="Password" placeholder="pwd"><br>
+   <input type2="Password" placeholder="re-pwd"><br>
+
+   <button onclick="fun1()">click here</button> 
+    
+
+
+   <script>
+    let input2=document.getElementsByTagName("input")[0]
+    btn=document.getElementsByTagName("button")
+    function fun(){
+        if (input2.value.length> 8) {
+            alert("Password is strong"); 
+        }
+        else if(input2.value.length>=4){
+            alert("Password is medium");}
+            else {
+                alert("Password is weak");
+            }    
+        }
+        
+      
+         let input=document.getElementsByTagName("input")[1]
+       let input1=document.getElementsByTagName("input")[2]
+    
+        btn=document.getElementsByTagName("button")
+        function fun1(){
+            if(input.value==input1.value){
+                alert("pwd matched");
+                
+            }
+            else{
+                alert("not matched");
+                
+            }
+        }
+// console.log(input,input1,btn)
+      
+   </script>
+</body>
+</html>

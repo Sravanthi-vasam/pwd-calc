@@ -1,0 +1,274 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calcus</title>
+    <style>
+        body{
+           text-align: center;
+           margin: 10%;
+        }
+    </style>
+</head>
+<body>
+        <h2>Calculator</h2><br>
+        <input type="text" id="n1" placeholder="Enter First Number">&nbsp;&nbsp;
+        <input type="text" id="n2" placeholder="Enter Second Number"><br><br><br>
+        <button id="addition">+</button>&nbsp;
+        <button id="subtract">-</button>&nbsp;
+        <button id="multiply">*</button>&nbsp;
+        <button id="divide">/</button><br>
+        <p id="result">Result</p>       
+
+    <script>
+        let n1Input =document.getElementById("n1")
+        let n2Input =document.getElementById("n2")
+        let resultpara =document.getElementById("result")
+
+        let additionbtn=document.getElementById("addition");
+        let subtractbtn=document.getElementById("subtract");
+        let multiplybtn=document.getElementById("multiply");
+        let dividebtn=document.getElementById("divide");
+       
+        function calculate(operator){
+        let n1=parseFloat(n1Input.value)
+        let n2=parseFloat(n2Input.value)
+        let result;
+       
+        switch(operator){
+            case '+':
+                result= n1+n2;
+                break
+            case '-':
+                result= n1-n2;
+                break
+            case '*':
+                result= n1*n2;
+                break
+            case '/':
+                result= n1/n2;
+                break
+            default:
+                console.log("invalid input ")
+        }
+        resultpara.innerHTML=result; 
+        }
+
+        additionbtn.addEventListener('click', () => calculate('+'));
+        subtractbtn.addEventListener('click', () => calculate('-'));
+        multiplybtn.addEventListener('click', () => calculate('*'));
+        dividebtn.addEventListener('click', () => calculate('/'));
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="Sravanthi"
+        console.log("string length="+str.length)
+        console.log("string charAt="+str.charAt(0))
+        console.log("string charCodeAt="+str.charCodeAt(0))
+        console.log("string charCodeAt="+str.charCodeAt(0))
+        console.log("string slice="+str.slice("5")) // slices takes after the number is given
+        console.log("string substring="+str.substring(2))
+        console.log("string substr="+str.substr(1))
+        console.log("string uppercase="+str.toUpperCase())
+        console.log("string lowercase="+str.toLowerCase())
+        let str1=" vasam"
+        console.log("string concatination = "+str.concat(str1))
+        let str2="    sravanthi vasam    "
+        console.log("string trim")
+        let a = str2.trim()
+        console.log(a)
+        console.log(str2.length);
+        console.log("string repeat : "+str2.repeat(3))
+        console.log("string split : "+str.split("n"))
+        console.log("replace method :")
+        let str3="sravanthi vasam"
+        let b=str3.replace("vasam","sravanthi")
+        console.log(b)
+        
+
+
+        
+
+
+        
+
+        
+
+
+        
+
+    </script>
+</body>
+</html>     -->
